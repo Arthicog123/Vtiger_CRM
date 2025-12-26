@@ -6,5 +6,4 @@ import genericUtils.BaseClass;
 
 public class LoginTest extends BaseClass{
 
-
 }
