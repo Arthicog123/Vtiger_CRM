@@ -11,5 +11,9 @@ public class LoginTest extends BaseClass{
 	public void logintest1() {
 		System.out.println("---this is login---");
 	}
+	@Test
+	public void logintest2() {
+		System.out.println("---this is login---");
+	}
 
 }
