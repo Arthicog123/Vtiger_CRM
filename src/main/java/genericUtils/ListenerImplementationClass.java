@@ -24,8 +24,9 @@ public class ListenerImplementationClass implements ITestListener, ISuiteListene
 	@Override
 	public void onStart(ISuite suite) {
 		//configuring the ui
-		ExtentSparkReporter htmlreport = new ExtentSparkReporter(
-				".\\ExtentReport\\report" + new JavaUtils().sysDate() + ".html");
+//		ExtentSparkReporter htmlreport = new ExtentSparkReporter(
+//				"./ExtentReport/report " + new JavaUtils().sysDate() + ".html");
+		ExtentSparkReporter htmlreport = new ExtentSparkReporter("./ExtentReports/ExtentReport.html");
 		htmlreport.config().setDocumentTitle("TP-30_VTiger");
 		htmlreport.config().setTheme(Theme.STANDARD);
 		htmlreport.config().setReportName("VTiger");
