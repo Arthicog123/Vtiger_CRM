@@ -6,10 +6,9 @@ import genericUtils.BaseClass;
 
 public class OrganizationTest extends BaseClass{
 	
-//hi i made changes to your orgclass in github
-	@Test
+	@Test(retryAnalyzer = genericUtils.RetryImplementationClass.class)
 	public void orgTest() {
-		System.out.println("----org test----");
+		System.out.println("---org test----");
 	}
 }
 

@@ -7,7 +7,7 @@ import genericUtils.BaseClass;
 
 public class ContactTest extends BaseClass{
 
-	@Test
+	@Test(retryAnalyzer = genericUtils.RetryImplementationClass.class)
 	public void contTest() {
 		System.out.println("----cont test----");
 	}
