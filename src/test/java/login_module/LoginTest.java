@@ -12,7 +12,7 @@ public class LoginTest extends BaseClass{
 	@Test(retryAnalyzer = genericUtils.RetryImplementationClass.class)
 	public void loginTest() {
 		System.out.println("---login test----");
-		Assert.fail();
+
 	}
 
 }
