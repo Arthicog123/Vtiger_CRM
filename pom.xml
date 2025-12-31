@@ -62,10 +62,7 @@
    
    </dependencies>
 
-  <profiles>
-  <profile>
-  
-  <id>sm</id>
+
    
 <build>
     <plugins>
@@ -84,7 +81,7 @@
         <version>3.5.4</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -93,7 +90,6 @@
   
   </build>
   
-  </profile>
-  </profiles> 
+
   
 </project>
