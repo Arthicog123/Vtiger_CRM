@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -24,7 +25,12 @@ public class ParameterTest {
 		System.out.println(URL);
 		System.out.println(USERNAME);
 		System.out.println(PASSWORD);
-		
+		EdgeOptions options = new EdgeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-gpu");
+		options.addArguments("--start-maximized");
 		WebDriver driver = null;
 		// launch the browser
 		if (BROWSER.equalsIgnoreCase("chrome")) {
@@ -34,7 +40,7 @@ public class ParameterTest {
 			driver = new FirefoxDriver();
 		}
 		else if (BROWSER.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
+			driver = new EdgeDriver(options);
 		}
 		
 		// maximize the window
