@@ -9,7 +9,7 @@ import genericUtils.BaseClass;
 
 public class LoginTest extends BaseClass{
 
-	@Test(retryAnalyzer = genericUtils.RetryImplementationClass.class)
+	@Test(retryAnalyzer = genericUtils.RetryImplementationClass.class, groups = "smoke")
 	public void loginTest() {
 		System.out.println("---login test----");
 
