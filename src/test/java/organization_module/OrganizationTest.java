@@ -10,6 +10,7 @@ public class OrganizationTest extends BaseClass{
 	@Test
 	public void orgTest() {
 		System.out.println("----org test----");
+		System.out.println("new");
 	}
 }
 
